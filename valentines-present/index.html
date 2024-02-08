@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Those Recordings</title>
+    <style>
+        body {
+            background-color: #ffc0cb; /* Pink background color */
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        
+        #container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #fff; /* White text color */
+            font-family: 'Bradley Hand', cursive; /* Bradley Hand font with cursive fallback */
+        }
+
+        .recording {
+            margin: 10px;
+            padding: 15px;
+            background-color: #e091a1; /* Two shades darker than the background */
+            border-radius: 10px;
+            cursor: pointer; /* Change cursor to pointer on hover for better user experience */
+            position: relative;
+        }
+
+        .controls {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        button {
+            margin: 0 5px;
+            background: none;
+            border: none;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        input[type="range"] {
+            width: 80%;
+        }
+    </style>
+</head>
+
+
+
+
+
+
+
+<body>
+    <div id="container">
+        <h1>Those Recordings</h1>
+
+        <!-- Recording 1 -->
+        <div class="recording" onclick="togglePlayback('audio1', this)">
+            <div class="controls">
+                <button id="playPauseBtn1">🤍</button>
+                <input type="range" id="seekbar1" value="0" step="0.01" onchange="updateSeek('audio1', this.value)">
+            </div>
+            Recording 1
+        </div>
+
+        <!-- Recording 2 -->
+        <div class="recording" onclick="togglePlayback('audio2', this)">
+            <div class="controls">
+                <button id="playPauseBtn2">🤍</button>
+                <input type="range" id="seekbar2" value="0" step="0.01" onchange="updateSeek('audio2', this.value)">
+            </div>
+            Recording 2
+        </div>
+
+        <!-- Recording 3 -->
+        <div class="recording" onclick="togglePlayback('audio3', this)">
+            <div class="controls">
+                <button id="playPauseBtn3">🤍</button>
+                <input type="range" id="seekbar3" value="0" step="0.01" onchange="updateSeek('audio3', this.value)">
+            </div>
+            Recording 3
+        </div>
+
+        <!-- Recording 4 -->
+        <div class="recording" onclick="togglePlayback('audio4', this)">
+            <div class="controls">
+                <button id="playPauseBtn4">🤍</button>
+                <input type="range" id="seekbar4" value="0" step="0.01" onchange="updateSeek('audio4', this.value)">
+            </div>
+            Recording 4
+        </div>
+
+        <!-- Recording 5 -->
+        <div class="recording" onclick="togglePlayback('audio5', this)">
+            <div class="controls">
+                <button id="playPauseBtn5">🤍</button>
+                <input type="range" id="seekbar5" value="0" step="0.01" onchange="updateSeek('audio5', this.value)">
+            </div>
+            Recording 5
+        </div>
+
+        <!-- Recording 6 -->
+        <div class="recording" onclick="togglePlayback('audio6', this)">
+            <div class="controls">
+                <button id="playPauseBtn6">🤍</button>
+                <input type="range" id="seekbar6" value="0" step="0.01" onchange="updateSeek('audio6', this.value)">
+            </div>
+            Recording 6
+        </div>
+
+        <!-- Recording 7 -->
+        <div class="recording" onclick="togglePlayback('audio7', this)">
+            <div class="controls">
+                <button id="playPauseBtn7">🤍</button>
+                <input type="range" id="seekbar7" value="0" step="0.01" onchange="updateSeek('audio7', this.value)">
+            </div>
+            Recording 7
+        </div>
+
+        <!-- Recording 8 -->
+        <div class="recording" onclick="togglePlayback('audio8', this)">
+            <div class="controls">
+                <button id="playPauseBtn8">🤍</button>
+                <input type="range" id="seekbar8" value="0" step="0.01" onchange="updateSeek('audio8', this.value)">
+            </div>
+            Recording 8
+        </div>
+
+        <!-- Recording 9 -->
+        <div class="recording" onclick="togglePlayback('audio9', this)">
+            <div class="controls">
+                <button id="playPauseBtn9">🤍</button>
+                <input type="range" id="seekbar9" value="0" step="0.01" onchange="updateSeek('audio9', this.value)">
+            </div>
+            Recording 9
+        </div>
+
+        <!-- Recording 10 -->
+        <div class="recording" onclick="togglePlayback('audio10', this)">
+            <div class="controls">
+                <button id="playPauseBtn10">🤍</button>
+                <input type="range" id="seekbar10" value="0" step="0.01" onchange="updateSeek('audio10', this.value)">
+            </div>
+            Recording 10
+        </div>
+
+        <!-- Recording 11 -->
+        <div class="recording" onclick="togglePlayback('audio11', this)">
+            <div class="controls">
+                <button id="playPauseBtn11">🤍</button>
+                <input type="range" id="seekbar11" value="0" step="0.01" onchange="updateSeek('audio11', this.value)">
+            </div>
+            Recording 11
+        </div>
+
+        <!-- Recording 12 -->
+        <div class="recording" onclick="togglePlayback('audio12', this)">
+            <div class="controls">
+                <button id="playPauseBtn12">🤍</button>
+                <input type="range" id="seekbar12" value="0" step="0.01" onchange="updateSeek('audio12', this.value)">
+            </div>
+            Recording 12
+        </div>
+
+        <audio id="audio1" src="audio/recording1.m4a" autoplay></audio>
+        <audio id="audio2" src="audio/recording2.m4a"></audio>
+        <audio id="audio3" src="audio/recording3.m4a"></audio>
+        <audio id="audio4" src="audio/recording4.m4a"></audio>
+        <audio id="audio5" src="audio/recording5.m4a"></audio>
+        <audio id="audio6" src="audio/recording6.m4a"></audio>
+        <audio id="audio7" src="audio/recording7.m4a"></audio>
+        <audio id="audio8" src="audio/recording8.m4a"></audio>
+        <audio id="audio9" src="audio/recording9.m4a"></audio>
+        <audio id="audio10" src="audio/recording10.m4a"></audio>
+        <audio id="audio11" src="audio/recording11.m4a"></audio>
+        <audio id="audio12" src="audio/recording12.m4a"></audio>
+        <!-- Add more audio elements with corresponding paths -->
+    </div>
+
+    <script>
+        function togglePlayback(audioId, recordingElement) {
+            var audio = document.getElementById(audioId);
+            var playPauseBtn = recordingElement.querySelector('button');
+            
+            if (audio.paused) {
+                audio.play();
+                playPauseBtn.textContent = '⬜️';
+            } else {
+                audio.pause();
+                playPauseBtn.textContent = '🤍';
+            }
+        }
+
+        function updateSeek(audioId, value) {
+            var audio = document.getElementById(audioId);
+            audio.currentTime = audio.duration * (value / 100);
+        }
+    </script>
+</body>
+</html>

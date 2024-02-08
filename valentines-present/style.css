@@ -1,0 +1,26 @@
+body {
+    background-color: #ffc0cb; /* Pink background color */
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+#container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+h1 {
+    color: #fff; /* White text color */
+    font-family: 'Bradley Hand', cursive; /* Bradley Hand font with cursive fallback */
+}
+
+.recording {
+    margin: 10px;
+    padding: 15px;
+    background-color: #fff; /* White background color */
+    border-radius: 10px;
+    cursor: pointer; /* Change cursor to pointer on hover for better user experience */
+}
+
+
